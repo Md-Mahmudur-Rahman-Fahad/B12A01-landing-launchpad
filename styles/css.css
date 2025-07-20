@@ -3,6 +3,7 @@
      padding: 0;
      box-sizing: border-box;
      font-family: Arial, sans-serif;
+
 }
 
 body {
@@ -36,28 +37,12 @@ h3 {
      border-radius: 8px;
      cursor: pointer;
      font-size: 16px;
-     transition: background 0.3s ease;
+   
 }
 
 .btn-primary:hover {
      background: #4338ca;
 }
-
-.btn-secondary {
-     background: #e0e7ff;
-     color: #4f46e5;
-     border: none;
-     padding: 10px 20px;
-     border-radius: 8px;
-     cursor: pointer;
-     font-size: 14px;
-     transition: background 0.3s ease;
-}
-
-.btn-secondary:hover {
-     background: #c7d2fe;
-}
-
 /* Header */
 header {
      background: #eef2ff;
@@ -113,18 +98,19 @@ section {
 
 /* Stats */
 .stats {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
+     display: flex;
+     justify-content: space-between;
      gap: 20px;
      background: #94a8ea;
      border-radius: 12px;
-     padding: 30px;
+     padding: 100px;
      margin: 40px;
 }
 
 .stats div h3 {
      font-size: 28px;
      color: #4f46e5;
+  
 }
 
 /* Testimonials */
@@ -145,7 +131,7 @@ section {
      text-align: left;
 }
 
-.cta-section {
+.focus-section {
      background: #fff;
      border-radius: 12px;
      padding: 50px;
@@ -155,13 +141,14 @@ section {
      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.cta-content h2 {
+.focus-content h2 {
      font-size: 32px;
      margin-bottom: 10px;
      font-weight: 700;
+     
 }
 
-.cta-content p {
+.focus-content p {
      font-size: 16px;
      color: #666;
      margin-bottom: 20px;
@@ -183,7 +170,7 @@ section {
      background: #4338ca;
 }
 
-.cta-image img {
+.focus-image img {
      margin-top: 30px;
      width: 100%;
      max-width: 800px;
@@ -192,26 +179,86 @@ section {
 
 
 /* Contact Form */
-.contact form {
-     max-width: 500px;
-     margin: 0 auto;
-     display: flex;
-     flex-direction: column;
-     gap: 15px;
+.Get-in-touch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  gap: 80px;
+ 
+  
 }
 
-.contact input,
-.contact textarea {
-     width: 100%;
-     padding: 12px;
-     border: 1px solid #ccc;
-     border-radius: 6px;
-     font-size: 14px;
+.header-getintouch h2 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+  text-align: left;
 }
 
-.contact button {
-     align-self: center;
+
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  color: #111;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4f46e5;
+}
+
+.btn-submit {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background: #4338ca;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
 
 /* Footer */
 footer {
