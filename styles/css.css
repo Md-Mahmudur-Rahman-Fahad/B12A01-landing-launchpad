@@ -1,0 +1,242 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+}
+
+body {
+     background: #f9f9ff;
+     color: #222;
+     line-height: 1.6;
+}
+
+a {
+     text-decoration: none;
+     color: inherit;
+}
+
+img {
+     max-width: 100%;
+     border-radius: 8px;
+}
+
+h1,
+h2,
+h3 {
+     margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+     background: #4f46e5;
+     color: #fff;
+     border: none;
+     padding: 12px 24px;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 16px;
+     transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+     background: #4338ca;
+}
+
+.btn-secondary {
+     background: #e0e7ff;
+     color: #4f46e5;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 14px;
+     transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+     background: #c7d2fe;
+}
+
+/* Header */
+header {
+     background: #eef2ff;
+     padding: 20px 10%;
+     text-align: center;
+     background-image: url('../Assets/Hero-bg.png');
+     background-size: cover;
+     /* Makes the image cover the area */
+     background-position: center;
+     /* Centers the image */
+}
+
+nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 20px;
+
+}
+
+.logo {
+     font-weight: bold;
+     font-size: 20px;
+}
+
+.hero h1 {
+     font-size: 28px;
+     margin-bottom: 20px;
+}
+
+/* Sections */
+section {
+     padding: 60px 10%;
+     text-align: center;
+}
+
+.see-action {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 20px;
+}
+
+.see-action .text {
+     flex: 1;
+     text-align: left;
+}
+
+.see-action .image {
+     flex: 1;
+}
+
+/* Stats */
+.stats {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+     background: #94a8ea;
+     border-radius: 12px;
+     padding: 30px;
+     margin: 40px;
+}
+
+.stats div h3 {
+     font-size: 28px;
+     color: #4f46e5;
+}
+
+/* Testimonials */
+.testimonials .testimonial-cards {
+     display: flex;
+     gap: 20px;
+     flex-wrap: wrap;
+     margin-top: 20px;
+}
+
+.testimonial-cards .card {
+     flex: 1;
+     min-width: 200px;
+     background: #fff;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+     text-align: left;
+}
+
+.cta-section {
+     background: #fff;
+     border-radius: 12px;
+     padding: 50px;
+     text-align: center;
+     max-width: 900px;
+     margin: 50px auto;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cta-content h2 {
+     font-size: 32px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+
+.cta-content p {
+     font-size: 16px;
+     color: #666;
+     margin-bottom: 20px;
+}
+
+.btn-primary {
+     display: inline-block;
+     background: #4f46e5;
+     color: #fff;
+     padding: 14px 28px;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 16px;
+     transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+     background: #4338ca;
+}
+
+.cta-image img {
+     margin-top: 30px;
+     width: 100%;
+     max-width: 800px;
+     border-radius: 16px;
+}
+
+
+/* Contact Form */
+.contact form {
+     max-width: 500px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 14px;
+}
+
+.contact button {
+     align-self: center;
+}
+
+/* Footer */
+footer {
+     background: #eef2ff;
+     padding: 20px;
+     text-align: center;
+     margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+     .see-action {
+          flex-direction: column;
+          text-align: center;
+     }
+
+     .see-action .text {
+          text-align: center;
+     }
+
+     .stats {
+          grid-template-columns: 1fr;
+     }
+
+     .testimonial-cards {
+          flex-direction: column;
+     }
+}
